@@ -56,36 +56,36 @@ const About = () => {
         duration: 8,
         ease: 'linear',
       }}
-      className="p-4 w-full  rounded-lg overflow-hidden"
+      className="p-4 w-400 sm:w-200 md:w-250 m-10 rounded-lg overflow-hidden"
     >
       <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 md:gap-12">
         
-        <div className="flex  items-center text-base sm:text-lg">
+        <div className="flex flex-col  items-center text-base sm:text-lg">
           <FaHtml5 className="text-orange-500 text-5xl sm:text-6xl md:text-7xl" />
           <div className="mt-3">HTML</div>
         </div>
 
-        <div className="flex  items-center text-base sm:text-lg">
+        <div className="flex flex-col  items-center text-base sm:text-lg">
           <FaCss3Alt className="text-blue-500 text-5xl sm:text-6xl md:text-7xl" />
           <div className="mt-3">CSS</div>
         </div>
 
-        <div className="flex  items-center text-base sm:text-lg">
+        <div className="flex flex-col   items-center text-base sm:text-lg">
           <FaJs className="text-yellow-400 text-5xl sm:text-6xl md:text-7xl" />
           <div className="mt-3">JavaScript</div>
         </div>
 
-        <div className="flex items-center text-base sm:text-lg">
+        <div className="flex flex-col  items-center text-base sm:text-lg">
           <FaReact className="text-cyan-400 text-5xl sm:text-6xl md:text-7xl" />
           <div className="mt-3">React</div>
         </div>
 
-        <div className="flex items-center text-base sm:text-lg">
+        <div className="flex flex-col items-center text-base sm:text-lg">
           <FaNodeJs className="text-green-600 text-5xl sm:text-6xl md:text-7xl" />
           <div className="mt-3">Node Js</div>
         </div>
 
-        <div className="flex items-center text-base sm:text-lg">
+        <div className="flex flex-col  items-center text-base sm:text-lg">
           <SiTailwindcss className="text-sky-400 text-5xl sm:text-6xl md:text-7xl" />
           <div className="mt-3">Tailwind CSS</div>
         </div>
