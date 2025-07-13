@@ -25,7 +25,7 @@ const Contact = () => {
             </p>
             <hr className="mb-5 border-gray-500" />
 
-           <form action="https://formsubmit.io/send" method="POST" className="flex flex-col items-center w-full max-w-md mx-auto">
+           <form action="https://formspree.io/f/xgvzwajp" method="POST" className="flex flex-col items-center w-full max-w-md mx-auto">
   
   <input
     type="text"
@@ -55,7 +55,7 @@ const Contact = () => {
   <input type="hidden" name="_captcha" value="false" />
 
   <button
-    type="submit"
+    type="submit" 
     className="border-2 border-blue-500 bg-blue-500 text-white w-full h-12 rounded-xl hover:border-pink-500 hover:bg-pink-500 transition duration-300"
   >
     Send

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './navbar';
+
 import ParticlesComponent from './ParticlesComponent';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs ,FaDownload} from 'react-icons/fa'
 import { SiTailwindcss } from 'react-icons/si';
@@ -8,7 +9,7 @@ import './style.css'
 
 const About = () => {
   return (
-    <div className=" min-h-screen min-w-screen text-white " >
+    <div className=" min-h-screen min-w-screen lg:w-250 text-white sm:w-200 md:w-250 " >
     
        
         <ParticlesComponent />
@@ -48,50 +49,56 @@ const About = () => {
           
         </section>
        
- <motion.div
-      animate={{ x: ['-30%', '20%'] }}
-      transition={{
-        repeat: Infinity,
-        repeatType: 'loop',
-        duration: 8,
-        ease: 'linear',
-      }}
-      className="p-4 w-400 sm:w-200 md:w-250 m-10 rounded-lg overflow-hidden"
-    >
-      <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 md:gap-12">
-        
-        <div className="flex flex-col  items-center text-base sm:text-lg">
-          <FaHtml5 className="text-orange-500 text-5xl sm:text-6xl md:text-7xl" />
-          <div className="mt-3">HTML</div>
-        </div>
+<motion.div
+  animate={{ x: ['-30%', '20%'] }}
+  transition={{
+    repeat: Infinity,
+    repeatType: 'loop',
+    duration: 8,
+    ease: 'linear',
+  }}
+  className="p-4 w-full max-w-screen-lg mx-auto overflow-hidden"
+>
+  <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+    {/* HTML */}
+    <div className="flex flex-col items-center text-sm sm:text-base">
+      <FaHtml5 className="text-orange-500 text-4xl sm:text-5xl md:text-6xl" />
+      <div className="mt-2">HTML</div>
+    </div>
 
-        <div className="flex flex-col  items-center text-base sm:text-lg">
-          <FaCss3Alt className="text-blue-500 text-5xl sm:text-6xl md:text-7xl" />
-          <div className="mt-3">CSS</div>
-        </div>
+    {/* CSS */}
+    <div className="flex flex-col items-center text-sm sm:text-base">
+      <FaCss3Alt className="text-blue-500 text-4xl sm:text-5xl md:text-6xl" />
+      <div className="mt-2">CSS</div>
+    </div>
 
-        <div className="flex flex-col   items-center text-base sm:text-lg">
-          <FaJs className="text-yellow-400 text-5xl sm:text-6xl md:text-7xl" />
-          <div className="mt-3">JavaScript</div>
-        </div>
+    {/* JS */}
+    <div className="flex flex-col items-center text-sm sm:text-base">
+      <FaJs className="text-yellow-400 text-4xl sm:text-5xl md:text-6xl" />
+      <div className="mt-2">JavaScript</div>
+    </div>
 
-        <div className="flex flex-col  items-center text-base sm:text-lg">
-          <FaReact className="text-cyan-400 text-5xl sm:text-6xl md:text-7xl" />
-          <div className="mt-3">React</div>
-        </div>
+    {/* React */}
+    <div className="flex flex-col items-center text-sm sm:text-base">
+      <FaReact className="text-cyan-400 text-4xl sm:text-5xl md:text-6xl" />
+      <div className="mt-2">React</div>
+    </div>
 
-        <div className="flex flex-col items-center text-base sm:text-lg">
-          <FaNodeJs className="text-green-600 text-5xl sm:text-6xl md:text-7xl" />
-          <div className="mt-3">Node Js</div>
-        </div>
+    {/* Node.js */}
+    <div className="flex flex-col items-center text-sm sm:text-base">
+      <FaNodeJs className="text-green-600 text-4xl sm:text-5xl md:text-6xl" />
+      <div className="mt-2">Node Js</div>
+    </div>
 
-        <div className="flex flex-col  items-center text-base sm:text-lg">
-          <SiTailwindcss className="text-sky-400 text-5xl sm:text-6xl md:text-7xl" />
-          <div className="mt-3">Tailwind CSS</div>
-        </div>
-
-      </div>
-    </motion.div> <br></br>
+    {/* Tailwind CSS */}
+    <div className="flex flex-col items-center text-sm sm:text-base">
+      <SiTailwindcss className="text-sky-400 text-4xl sm:text-5xl md:text-6xl" />
+      <div className="mt-2">Tailwind CSS</div>
+    </div>
+    
+  </div>
+</motion.div>
+<br></br>
     <div className='flex flex-col items-center justify-center'>
         <hr className="w-screen max-w-4xl border-gray-500 mb-16 " />
 </div>
