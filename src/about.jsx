@@ -52,9 +52,9 @@ const About = () => {
 <motion.div
   animate={{ x: ['-30%', '20%'] }}
   transition={{
-    repeat: Infinity,
+    repeat: 10,
     repeatType: 'loop',
-    duration: 8,
+    duration: 10,
     ease: 'linear',
   }}
   className="p-4 w-full max-w-screen-lg mx-auto overflow-hidden"
@@ -106,16 +106,16 @@ const About = () => {
         <section className="block max-w-4xl mx-auto mb-16  ">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-8">Education</h2>
           <div>
-          <div className="text-lg sm:text-xl md:text-2xl font-light mb-4 flex justify-center items-center">
+          <div className="text-lg sm:text-xl sm:mr-5 md:text-2xl font-light mb-4 flex justify-center items-center">
             <p className="font-medium">Government Engineering College of Bikaner</p>
             <p className="font-medium">S M P Govt Fort SR SEC School Bikaner</p>
           </div>
-          <div className="text-sm sm:text-base md:text-lg text-gray-400 font-thin flex  ">
+          <div className="text-sm sm:text-base sm:mr-5 md:text-lg text-gray-400 font-thin flex  ">
            <div className='sm:mr-35 md:mr-45 mr-35' > <p>2021 - 2025</p>
             <p>B.Tech CSE</p>
             <p>CGPA: 7.96</p>
             </div>
-            <div className='sm:ml-40 md:ml-50 ml-35'> <p>2020 - 2021</p>
+            <div className='sm:ml-45 md:ml-50 ml-27'> <p>2020 - 2021</p>
             <p>PCM</p>
             <p>Percentage: 78%</p></div>
           </div>
